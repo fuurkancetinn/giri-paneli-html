@@ -1,1 +1,3 @@
-# giri-paneli-html
+# loginpanel 
+
+A simple login panel coded in HTML.
