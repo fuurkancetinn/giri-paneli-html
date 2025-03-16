@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Seçimi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.hizliresim.com/i7zgxk9.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .selection-container {
+            background: rgba(33, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            text-align: center;
+        }
+        .selection-container h2 {
+            color: #b22222;
+        }
+        .character-list {
+            margin: 20px 0;
+        }
+        .character {
+            background: #222;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .character:hover {
+            background: #444;
+        }
+        .button {
+            background: #b22222;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .button:hover {
+            background: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="selection-container">
+        <h2>Alan Seç</h2>
+        <div class="character-list">
+            <div class="character">Alan 1</div>
+            <div class="character">Alan 2</div>
+        </div>
+        <button class="button" onclick="selectCharacter()">Alanı Seç</button>
+        <button class="button" onclick="createCharacter()">Yeni Alan Oluştur</button>
+    </div>
+
+    <script>
+        function selectCharacter() {
+            alert("Alan Seçildi! Yönlendiriliyorsunuz...");
+        }
+        function createCharacter() {
+            window.location.href = "menu.html";
+        }
+    </script>
+</body>
+</html>
